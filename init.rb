@@ -11,7 +11,7 @@ Redmine::Plugin.register :redmine_brigadier do
   name 'Brigadier plugin'
   author 'Ivan Bobrenko'
   description 'Ensures that time spend on issues is in bounds of issues'
-  version '0.1.0'
+  version '0.2.0'
   url 'https://github.com/BANOnotIT/redmine_brigadier'
   author_url 'https://github.com/BANOnotIT'
 end
