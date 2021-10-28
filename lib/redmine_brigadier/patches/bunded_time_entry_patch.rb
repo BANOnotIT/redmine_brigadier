@@ -14,6 +14,12 @@ module RedmineBrigadier
         if issue.start_date && issue.start_date > self.spent_on
           errors.add :spent_on, :greater_than_or_equal_to, count: issue.start_date
         end
+
+        min_date = Date.today - 1.day
+        if min_date > self.spent_on
+          errors.add :spent_on, :greater_than_or_equal_to, count: min_date
+        end
+
       end
     end
   end
